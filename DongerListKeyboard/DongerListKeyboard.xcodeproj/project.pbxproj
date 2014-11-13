@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0929A1DB1A1369C20061E88D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A1DA1A1369C20061E88D /* KeyboardViewController.swift */; };
+		0929A1DE1A1369C20061E88D /* DLKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0929A1D61A1369C20061E88D /* DLKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0929A1E41A13E9500061E88D /* Donger List.json in Resources */ = {isa = PBXBuildFile; fileRef = 0929A1E31A13E9500061E88D /* Donger List.json */; };
+		0929A1E51A13E9500061E88D /* Donger List.json in Resources */ = {isa = PBXBuildFile; fileRef = 0929A1E31A13E9500061E88D /* Donger List.json */; };
+		096C8CB71A13EF34009C9A03 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096C8CB61A13EF34009C9A03 /* SwiftyJSON.framework */; };
+		096C8CBA1A13F141009C9A03 /* DLEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C8CB91A13F141009C9A03 /* DLEmoticonManager.swift */; };
+		096C8CBC1A1403D0009C9A03 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096C8CBB1A1403D0009C9A03 /* Realm.framework */; };
+		096C8CBE1A1403DA009C9A03 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C8CBD1A1403DA009C9A03 /* RLMSupport.swift */; };
+		096C8CC01A1403EE009C9A03 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 096C8CBF1A1403EE009C9A03 /* libc++.dylib */; };
+		096C8CC41A142D45009C9A03 /* DLCategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C8CC31A142D45009C9A03 /* DLCategoryCollectionView.swift */; };
+		096C8CC61A142D57009C9A03 /* DLEmoticonCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C8CC51A142D57009C9A03 /* DLEmoticonCollectionView.swift */; };
+		096C8CC81A14318C009C9A03 /* DLEmoticonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C8CC71A14318C009C9A03 /* DLEmoticonCollectionViewCell.swift */; };
+		096C8CCB1A148558009C9A03 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096C8CC91A148517009C9A03 /* SwiftyJSON.framework */; };
+		096C8CCC1A148559009C9A03 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 096C8CC91A148517009C9A03 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		096C8CCF1A148609009C9A03 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C8CCE1A148609009C9A03 /* test.swift */; };
+		09AF0AF71A12F581007805AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF0AF61A12F581007805AE /* AppDelegate.swift */; };
+		09AF0AF91A12F581007805AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF0AF81A12F581007805AE /* ViewController.swift */; };
+		09AF0AFC1A12F581007805AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AF0AFA1A12F581007805AE /* Main.storyboard */; };
+		09AF0AFE1A12F581007805AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AF0AFD1A12F581007805AE /* Images.xcassets */; };
+		09AF0B011A12F581007805AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09AF0AFF1A12F581007805AE /* LaunchScreen.xib */; };
+		09AF0B0D1A12F581007805AE /* DongerListKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF0B0C1A12F581007805AE /* DongerListKeyboardTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0929A1DC1A1369C20061E88D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09AF0AE91A12F581007805AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0929A1D51A1369C20061E88D;
+			remoteInfo = DLKeyboard;
+		};
+		09AF0B071A12F581007805AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09AF0AE91A12F581007805AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09AF0AF01A12F581007805AE;
+			remoteInfo = DongerListKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0929A1E21A1369C20061E88D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0929A1DE1A1369C20061E88D /* DLKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096C8CCD1A148559009C9A03 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				096C8CCC1A148559009C9A03 /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0929A1D61A1369C20061E88D /* DLKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DLKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0929A1D91A1369C20061E88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0929A1DA1A1369C20061E88D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0929A1E31A13E9500061E88D /* Donger List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Donger List.json"; path = "../../Resources/Donger List.json"; sourceTree = "<group>"; };
+		096C8CB61A13EF34009C9A03 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "vendors/SwiftyJSON-master/build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		096C8CB91A13F141009C9A03 /* DLEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLEmoticonManager.swift; sourceTree = "<group>"; };
+		096C8CBB1A1403D0009C9A03 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		096C8CBD1A1403DA009C9A03 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		096C8CBF1A1403EE009C9A03 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		096C8CC11A1404EE009C9A03 /* DongerListKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DongerListKeyboard.entitlements; sourceTree = "<group>"; };
+		096C8CC21A141E2C009C9A03 /* DLKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DLKeyboard.entitlements; sourceTree = "<group>"; };
+		096C8CC31A142D45009C9A03 /* DLCategoryCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLCategoryCollectionView.swift; sourceTree = "<group>"; };
+		096C8CC51A142D57009C9A03 /* DLEmoticonCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLEmoticonCollectionView.swift; sourceTree = "<group>"; };
+		096C8CC71A14318C009C9A03 /* DLEmoticonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLEmoticonCollectionViewCell.swift; sourceTree = "<group>"; };
+		096C8CC91A148517009C9A03 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DongerListKeyboard-gjxlumhzjpfcvvarookglofhgoho/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		096C8CCE1A148609009C9A03 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		09AF0AF11A12F581007805AE /* DongerListKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DongerListKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AF0AF51A12F581007805AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AF0AF61A12F581007805AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09AF0AF81A12F581007805AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09AF0AFB1A12F581007805AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09AF0AFD1A12F581007805AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		09AF0B001A12F581007805AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		09AF0B061A12F581007805AE /* DongerListKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DongerListKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AF0B0B1A12F581007805AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AF0B0C1A12F581007805AE /* DongerListKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongerListKeyboardTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0929A1D31A1369C20061E88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AF0AEE1A12F581007805AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096C8CCB1A148558009C9A03 /* SwiftyJSON.framework in Frameworks */,
+				096C8CC01A1403EE009C9A03 /* libc++.dylib in Frameworks */,
+				096C8CBC1A1403D0009C9A03 /* Realm.framework in Frameworks */,
+				096C8CB71A13EF34009C9A03 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AF0B031A12F581007805AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0929A1D71A1369C20061E88D /* DLKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				096C8CC21A141E2C009C9A03 /* DLKeyboard.entitlements */,
+				0929A1DA1A1369C20061E88D /* KeyboardViewController.swift */,
+				096C8CC31A142D45009C9A03 /* DLCategoryCollectionView.swift */,
+				096C8CC51A142D57009C9A03 /* DLEmoticonCollectionView.swift */,
+				096C8CC71A14318C009C9A03 /* DLEmoticonCollectionViewCell.swift */,
+				0929A1D81A1369C20061E88D /* Supporting Files */,
+			);
+			path = DLKeyboard;
+			sourceTree = "<group>";
+		};
+		0929A1D81A1369C20061E88D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0929A1D91A1369C20061E88D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		096C8CB81A13EF66009C9A03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				096C8CC91A148517009C9A03 /* SwiftyJSON.framework */,
+				096C8CBF1A1403EE009C9A03 /* libc++.dylib */,
+				096C8CBD1A1403DA009C9A03 /* RLMSupport.swift */,
+				096C8CBB1A1403D0009C9A03 /* Realm.framework */,
+				096C8CB61A13EF34009C9A03 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09AF0AE81A12F581007805AE = {
+			isa = PBXGroup;
+			children = (
+				09AF0AF31A12F581007805AE /* DongerListKeyboard */,
+				09AF0B091A12F581007805AE /* DongerListKeyboardTests */,
+				0929A1D71A1369C20061E88D /* DLKeyboard */,
+				096C8CB81A13EF66009C9A03 /* Frameworks */,
+				09AF0AF21A12F581007805AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09AF0AF21A12F581007805AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09AF0AF11A12F581007805AE /* DongerListKeyboard.app */,
+				09AF0B061A12F581007805AE /* DongerListKeyboardTests.xctest */,
+				0929A1D61A1369C20061E88D /* DLKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09AF0AF31A12F581007805AE /* DongerListKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				096C8CC11A1404EE009C9A03 /* DongerListKeyboard.entitlements */,
+				09AF0AF61A12F581007805AE /* AppDelegate.swift */,
+				09AF0AF81A12F581007805AE /* ViewController.swift */,
+				096C8CB91A13F141009C9A03 /* DLEmoticonManager.swift */,
+				096C8CCE1A148609009C9A03 /* test.swift */,
+				09AF0AFA1A12F581007805AE /* Main.storyboard */,
+				09AF0AFD1A12F581007805AE /* Images.xcassets */,
+				09AF0AFF1A12F581007805AE /* LaunchScreen.xib */,
+				09AF0AF41A12F581007805AE /* Supporting Files */,
+			);
+			path = DongerListKeyboard;
+			sourceTree = "<group>";
+		};
+		09AF0AF41A12F581007805AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0929A1E31A13E9500061E88D /* Donger List.json */,
+				09AF0AF51A12F581007805AE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09AF0B091A12F581007805AE /* DongerListKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				09AF0B0C1A12F581007805AE /* DongerListKeyboardTests.swift */,
+				09AF0B0A1A12F581007805AE /* Supporting Files */,
+			);
+			path = DongerListKeyboardTests;
+			sourceTree = "<group>";
+		};
+		09AF0B0A1A12F581007805AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09AF0B0B1A12F581007805AE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0929A1D51A1369C20061E88D /* DLKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0929A1E11A1369C20061E88D /* Build configuration list for PBXNativeTarget "DLKeyboard" */;
+			buildPhases = (
+				0929A1D21A1369C20061E88D /* Sources */,
+				0929A1D31A1369C20061E88D /* Frameworks */,
+				0929A1D41A1369C20061E88D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLKeyboard;
+			productName = DLKeyboard;
+			productReference = 0929A1D61A1369C20061E88D /* DLKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		09AF0AF01A12F581007805AE /* DongerListKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AF0B101A12F581007805AE /* Build configuration list for PBXNativeTarget "DongerListKeyboard" */;
+			buildPhases = (
+				09AF0AED1A12F581007805AE /* Sources */,
+				09AF0AEE1A12F581007805AE /* Frameworks */,
+				09AF0AEF1A12F581007805AE /* Resources */,
+				0929A1E21A1369C20061E88D /* Embed App Extensions */,
+				096C8CCD1A148559009C9A03 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0929A1DD1A1369C20061E88D /* PBXTargetDependency */,
+			);
+			name = DongerListKeyboard;
+			productName = DongerListKeyboard;
+			productReference = 09AF0AF11A12F581007805AE /* DongerListKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09AF0B051A12F581007805AE /* DongerListKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AF0B131A12F581007805AE /* Build configuration list for PBXNativeTarget "DongerListKeyboardTests" */;
+			buildPhases = (
+				09AF0B021A12F581007805AE /* Sources */,
+				09AF0B031A12F581007805AE /* Frameworks */,
+				09AF0B041A12F581007805AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09AF0B081A12F581007805AE /* PBXTargetDependency */,
+			);
+			name = DongerListKeyboardTests;
+			productName = DongerListKeyboardTests;
+			productReference = 09AF0B061A12F581007805AE /* DongerListKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09AF0AE91A12F581007805AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Zhixuan Lai";
+				TargetAttributes = {
+					0929A1D51A1369C20061E88D = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 6DSXGUT2JS;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					09AF0AF01A12F581007805AE = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 6DSXGUT2JS;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					09AF0B051A12F581007805AE = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 09AF0AF01A12F581007805AE;
+					};
+				};
+			};
+			buildConfigurationList = 09AF0AEC1A12F581007805AE /* Build configuration list for PBXProject "DongerListKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09AF0AE81A12F581007805AE;
+			productRefGroup = 09AF0AF21A12F581007805AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09AF0AF01A12F581007805AE /* DongerListKeyboard */,
+				09AF0B051A12F581007805AE /* DongerListKeyboardTests */,
+				0929A1D51A1369C20061E88D /* DLKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0929A1D41A1369C20061E88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0929A1E51A13E9500061E88D /* Donger List.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AF0AEF1A12F581007805AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AF0AFC1A12F581007805AE /* Main.storyboard in Resources */,
+				09AF0B011A12F581007805AE /* LaunchScreen.xib in Resources */,
+				09AF0AFE1A12F581007805AE /* Images.xcassets in Resources */,
+				0929A1E41A13E9500061E88D /* Donger List.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AF0B041A12F581007805AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0929A1D21A1369C20061E88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096C8CC61A142D57009C9A03 /* DLEmoticonCollectionView.swift in Sources */,
+				096C8CC41A142D45009C9A03 /* DLCategoryCollectionView.swift in Sources */,
+				096C8CC81A14318C009C9A03 /* DLEmoticonCollectionViewCell.swift in Sources */,
+				0929A1DB1A1369C20061E88D /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AF0AED1A12F581007805AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AF0AF91A12F581007805AE /* ViewController.swift in Sources */,
+				096C8CBA1A13F141009C9A03 /* DLEmoticonManager.swift in Sources */,
+				09AF0AF71A12F581007805AE /* AppDelegate.swift in Sources */,
+				096C8CCF1A148609009C9A03 /* test.swift in Sources */,
+				096C8CBE1A1403DA009C9A03 /* RLMSupport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AF0B021A12F581007805AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AF0B0D1A12F581007805AE /* DongerListKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0929A1DD1A1369C20061E88D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0929A1D51A1369C20061E88D /* DLKeyboard */;
+			targetProxy = 0929A1DC1A1369C20061E88D /* PBXContainerItemProxy */;
+		};
+		09AF0B081A12F581007805AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09AF0AF01A12F581007805AE /* DongerListKeyboard */;
+			targetProxy = 09AF0B071A12F581007805AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09AF0AFA1A12F581007805AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AF0AFB1A12F581007805AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09AF0AFF1A12F581007805AE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AF0B001A12F581007805AE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0929A1DF1A1369C20061E88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DLKeyboard/DLKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DongerListKeyboard-gjxlumhzjpfcvvarookglofhgoho/Build/Products/Debug-iphoneos",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0929A1E01A1369C20061E88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DLKeyboard/DLKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DongerListKeyboard-gjxlumhzjpfcvvarookglofhgoho/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = DLKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		09AF0B0E1A12F581007805AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09AF0B0F1A12F581007805AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09AF0B111A12F581007805AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DongerListKeyboard/DongerListKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendors/SwiftyJSON-master/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DongerListKeyboard-gjxlumhzjpfcvvarookglofhgoho/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = DongerListKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		09AF0B121A12F581007805AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DongerListKeyboard/DongerListKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendors/SwiftyJSON-master/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DongerListKeyboard-gjxlumhzjpfcvvarookglofhgoho/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = DongerListKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		09AF0B141A12F581007805AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DongerListKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DongerListKeyboard.app/DongerListKeyboard";
+			};
+			name = Debug;
+		};
+		09AF0B151A12F581007805AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DongerListKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DongerListKeyboard.app/DongerListKeyboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0929A1E11A1369C20061E88D /* Build configuration list for PBXNativeTarget "DLKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0929A1DF1A1369C20061E88D /* Debug */,
+				0929A1E01A1369C20061E88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AF0AEC1A12F581007805AE /* Build configuration list for PBXProject "DongerListKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AF0B0E1A12F581007805AE /* Debug */,
+				09AF0B0F1A12F581007805AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AF0B101A12F581007805AE /* Build configuration list for PBXNativeTarget "DongerListKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AF0B111A12F581007805AE /* Debug */,
+				09AF0B121A12F581007805AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AF0B131A12F581007805AE /* Build configuration list for PBXNativeTarget "DongerListKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AF0B141A12F581007805AE /* Debug */,
+				09AF0B151A12F581007805AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09AF0AE91A12F581007805AE /* Project object */;
+}
