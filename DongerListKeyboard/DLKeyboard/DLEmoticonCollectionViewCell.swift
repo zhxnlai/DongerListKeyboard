@@ -8,14 +8,19 @@
 
 import UIKit
 
-class DLEmoticonCollectionViewCell: UICollectionViewCell {
-    var textLabel:UILabel!
+class DLEmoticonCollectionViewCell: DLTextCollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        textLabel = UILabel()
-        self.contentView.addSubview(textLabel)
+        
+        var backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.lightGrayColor()
+        self.selectedBackgroundView = backgroundView
+        
+//        contentView.layer.borderColor = UIColor.darkGrayColor().CGColor;
+//        contentView.layer.borderWidth = 1;
+
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -25,8 +30,7 @@ class DLEmoticonCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        textLabel.frame = self.contentView.frame
-        
+        self.selectedBackgroundView.frame = self.contentView.frame
     }
     
 }

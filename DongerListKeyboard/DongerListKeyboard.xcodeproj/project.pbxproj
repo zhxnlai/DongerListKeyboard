@@ -11,6 +11,7 @@
 		0929A1DE1A1369C20061E88D /* DLKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0929A1D61A1369C20061E88D /* DLKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0929A1E41A13E9500061E88D /* Donger List.json in Resources */ = {isa = PBXBuildFile; fileRef = 0929A1E31A13E9500061E88D /* Donger List.json */; };
 		0929A1E51A13E9500061E88D /* Donger List.json in Resources */ = {isa = PBXBuildFile; fileRef = 0929A1E31A13E9500061E88D /* Donger List.json */; };
+		0958AAD91A151D300013EE9E /* DLTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958AAD81A151D300013EE9E /* DLTextCollectionViewCell.swift */; };
 		096C8CB71A13EF34009C9A03 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096C8CB61A13EF34009C9A03 /* SwiftyJSON.framework */; };
 		096C8CBA1A13F141009C9A03 /* DLEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C8CB91A13F141009C9A03 /* DLEmoticonManager.swift */; };
 		096C8CBC1A1403D0009C9A03 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096C8CBB1A1403D0009C9A03 /* Realm.framework */; };
@@ -77,6 +78,7 @@
 		0929A1D91A1369C20061E88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0929A1DA1A1369C20061E88D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0929A1E31A13E9500061E88D /* Donger List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Donger List.json"; path = "../../Resources/Donger List.json"; sourceTree = "<group>"; };
+		0958AAD81A151D300013EE9E /* DLTextCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLTextCollectionViewCell.swift; sourceTree = "<group>"; };
 		096C8CB61A13EF34009C9A03 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "vendors/SwiftyJSON-master/build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		096C8CB91A13F141009C9A03 /* DLEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLEmoticonManager.swift; sourceTree = "<group>"; };
 		096C8CBB1A1403D0009C9A03 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				0929A1DA1A1369C20061E88D /* KeyboardViewController.swift */,
 				096C8CC31A142D45009C9A03 /* DLCategoryCollectionView.swift */,
 				096C8CC51A142D57009C9A03 /* DLEmoticonCollectionView.swift */,
+				0958AAD81A151D300013EE9E /* DLTextCollectionViewCell.swift */,
 				096C8CC71A14318C009C9A03 /* DLEmoticonCollectionViewCell.swift */,
 				0929A1D81A1369C20061E88D /* Supporting Files */,
 			);
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0958AAD91A151D300013EE9E /* DLTextCollectionViewCell.swift in Sources */,
 				096C8CC61A142D57009C9A03 /* DLEmoticonCollectionView.swift in Sources */,
 				096C8CC41A142D45009C9A03 /* DLCategoryCollectionView.swift in Sources */,
 				096C8CC81A14318C009C9A03 /* DLEmoticonCollectionViewCell.swift in Sources */,

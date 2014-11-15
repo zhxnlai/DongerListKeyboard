@@ -34,9 +34,6 @@ class ViewController: UIViewController {
         let path = NSBundle.mainBundle().pathForResource("Donger List", ofType: "json")
         let fileData = NSData(contentsOfFile: path!)
         
-//        println("path: \(path)")
-//        println("content: \(content)")
-
         DLEmoticonManager.sharedInstance.initialize(fileData!);
       
 

@@ -12,22 +12,23 @@ let appGroupId = "group.dongerListKeyboard"
 
 class KeyboardViewController: UIInputViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    let emoticonCellHeight = CGFloat(35)
+    
+    
     // sharing through NSUserDefaults
-    
     var emoticons:Dictionary<String,Array<String>>?
-    var textView:UITextView?
-    
     var currentCategory:String = ""
     
+    // TODO: rearrange emoticons using dynamic programming, optimize margin
+    // break down each row into secion
     
     var categoryCollectionView:DLCategoryCollectionView!
     var emoticonsCollectionView:DLEmoticonCollectionView!
     
-    
     @IBOutlet var nextKeyboardButton: UIButton!
     @IBOutlet var deleteKeyboardButton: UIButton!
-    let nextKeyboardButtonTitle = "☝️"
-    let deleteKeyboardButtonTitle = "⬅︎"
+    let nextKeyboardButtonTitle = " ☝️ "
+    let deleteKeyboardButtonTitle = " ⬅︎ "
 
     var reloadButton: UIButton!
     
@@ -45,15 +46,6 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDelegate, U
         println("view did load")
     
         
-//        if var textView = self.textView {
-//            textView.text = "keyboard emoticons: \(emoticons)"
-//        } else {
-//            var textView = UITextView(frame: CGRect(x: 0, y: 0, width: 320, height: 100))
-//            textView.text = "keyboard emoticons: \(emoticons)"
-//            self.view.addSubview(textView)
-//            self.textView = textView
-//        }
-        
         self.loadEmoticons()
 
         
@@ -62,7 +54,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDelegate, U
     }
     
     func setupUI() {
-        let buttonFontSize = CGFloat(30)
+        let buttonFontSize = CGFloat(25)
         
 
         
@@ -160,7 +152,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDelegate, U
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(collectionViewIdentifier, forIndexPath: indexPath) as DLEmoticonCollectionViewCell
+        var collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(collectionViewIdentifier, forIndexPath: indexPath) as DLTextCollectionViewCell
         
 //        println("indexpath: row \(indexPath.row)")
         
@@ -184,20 +176,6 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDelegate, U
         }
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        if collectionView.isEqual(self.categoryCollectionView) {
-            var text = Array(self.emoticons!.keys)[indexPath.item]
-            return self.sizeForString(text)
-        } else {
-            if let emoticons = emoticonsForCurrentCategory() {
-                var text = emoticons[indexPath.item]
-                return self.sizeForString(text)
-            }
-            
-            return self.sizeForString("")
-        }
-
-    }
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         collectionView.deselectItemAtIndexPath(indexPath, animated: true)
@@ -215,6 +193,28 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDelegate, U
             
         }
     }
+    
+    // UICollectionViewDelegateFlowLayout
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        if collectionView.isEqual(self.categoryCollectionView) {
+            var text = Array(self.emoticons!.keys)[indexPath.item]
+            var size = self.sizeForString(" \(text) ")
+            size = CGSize(width: size.width, height:collectionView.frame.size.height)
+//            return self.sizeForString(text)
+            return size
+        } else {
+            if let emoticons = emoticonsForCurrentCategory() {
+                var text = emoticons[indexPath.item]
+                var size = self.sizeForString(text)
+                size = CGSize(width: size.width, height:emoticonCellHeight)
+                return size
+            }
+            
+            return self.sizeForString("")
+        }
+        
+    }
+
     
     // - ()
     var testLabel = UILabel()
@@ -240,7 +240,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDelegate, U
             println("synchronized keyboard")
         }
         
-        println("share defaults: \(sharedDefaults.dictionaryRepresentation())")
+//        println("share defaults: \(sharedDefaults.dictionaryRepresentation())")
 
         if var data = sharedDefaults.objectForKey("emoticons") as? NSData {
             self.emoticons = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [String: [String]]

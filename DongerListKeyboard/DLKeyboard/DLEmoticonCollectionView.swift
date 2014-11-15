@@ -13,7 +13,7 @@ class DLEmoticonCollectionView: UICollectionView {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 100, height: 30)
         layout.scrollDirection = UICollectionViewScrollDirection.Vertical
-//        layout.minimumLineSpacing = 0;
+        layout.minimumLineSpacing = 0;
 
         super.init(frame:CGRectZero, collectionViewLayout:layout)
         self.registerClass(DLEmoticonCollectionViewCell.self, forCellWithReuseIdentifier: collectionViewIdentifier)
